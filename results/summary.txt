@@ -1,0 +1,113 @@
+======================================================================
+1. MISSING DEATH STATUS
+Total cases in file:            106,219,500
+Known death status:              34,071,247  (32.1%)
+Missing/Unknown death status:    72,148,253  (67.9%)
+Rows with invalid/absent date (excluded from time analysis): 0 (0.00%)
+
+Percentage with known death status per year:
+year_label    cases    known  pct_known
+      2020 20195712  7830355       38.8
+      2021 34489725 12338906       35.8
+      2022 41085361 11171487       27.2
+      2023  8413979  2248268       26.7
+      2024  2034723   482231       23.7
+
+Percentage with known death status per age group:
+      age_group    cases   known  pct_known
+    0 - 9 Years  8466822 2688381       31.8
+  10 - 19 Years 12428392 4035021       32.5
+  20 - 29 Years 17658006 5371142       30.4
+  30 - 39 Years 17078442 5207167       30.5
+  40 - 49 Years 14620204 4601972       31.5
+  50 - 59 Years 13716593 4478021       32.6
+  60 - 69 Years 10471990 3568895       34.1
+  70 - 79 Years  6392854 2310651       36.1
+      80+ Years  4252648 1753842       41.2
+Missing/Unknown  1133549   56155        5.0
+
+======================================================================
+5. REPORTING CHANGES OVER TIME (documented jurisdiction drop-outs)
+
+Monthly case volume around each documented change (mean of the 2 months before vs after):
+  2021-11-08  Iowa stops reporting             before= 2,400,757  after=11,945,988  change=+397.6%
+  2023-05-02  Oklahoma stops reporting         before=   350,127  after=   279,930  change=-20.0%
+  2023-05-12  Kansas stops reporting           before=   350,127  after=   279,930  change=-20.0%
+  2023-05-23  New Hampshire stops reporting    before=   350,127  after=   279,930  change=-20.0%
+  2023-07-13  Oregon: pediatric deaths only    before=   279,930  after=   888,131  change=+217.3%
+  2023-10-31  Louisiana stops reporting        before=   689,057  after=   810,377  change=+17.6%
+  2024-01-01  Kentucky stops reporting         before=   810,377  after=   727,641  change=-10.2%
+  2024-07-01  CDC reporting ends               (not enough months on one side to compare)
+
+======================================================================
+2. FATALITY BY AGE GROUP AND SEX (known death status only)
+Excluded (age or sex unknown / other): 303,794 of 34,071,247 known-outcome cases
+    age_group    sex  deaths   known  fatality  ci_low  ci_high
+  0 - 9 Years Female     502 1289393   0.00039 0.00036  0.00042
+  0 - 9 Years   Male     604 1374657   0.00044 0.00041  0.00048
+10 - 19 Years Female     630 2078903   0.00030 0.00028  0.00033
+10 - 19 Years   Male     789 1917607   0.00041 0.00038  0.00044
+20 - 29 Years Female    2510 2989741   0.00084 0.00081  0.00087
+20 - 29 Years   Male    3834 2339336   0.00164 0.00159  0.00169
+30 - 39 Years Female    6828 2904190   0.00235 0.00230  0.00241
+30 - 39 Years   Male   10552 2263444   0.00466 0.00457  0.00475
+40 - 49 Years Female   15240 2544389   0.00599 0.00590  0.00609
+40 - 49 Years   Male   24545 2023569   0.01213 0.01198  0.01228
+50 - 59 Years Female   35182 2418979   0.01454 0.01439  0.01470
+50 - 59 Years   Male   58352 2030131   0.02874 0.02851  0.02897
+60 - 69 Years Female   73733 1881382   0.03919 0.03891  0.03947
+60 - 69 Years   Male  110230 1668102   0.06608 0.06571  0.06646
+70 - 79 Years Female  109292 1202570   0.09088 0.09037  0.09140
+70 - 79 Years   Male  148856 1097597   0.13562 0.13498  0.13626
+    80+ Years Female  219695 1024889   0.21436 0.21357  0.21516
+    80+ Years   Male  200144  718574   0.27853 0.27749  0.27957
+
+Odds ratio of death vs 0 - 9 Years (crude, both sexes):
+    age_group   reference  odds_ratio  ci_low  ci_high  p_value
+  0 - 9 Years 0 - 9 Years        1.00    0.92     1.09  1.0e+00
+10 - 19 Years 0 - 9 Years        0.86    0.79     0.93  9.7e-05
+20 - 29 Years 0 - 9 Years        2.87    2.69     3.06 1.7e-229
+30 - 39 Years 0 - 9 Years        8.13    7.65     8.63  0.0e+00
+40 - 49 Years 0 - 9 Years       21.15   19.93    22.46  0.0e+00
+50 - 59 Years 0 - 9 Years       51.70   48.73    54.86  0.0e+00
+60 - 69 Years 0 - 9 Years      131.61  124.05   139.63  0.0e+00
+70 - 79 Years 0 - 9 Years      304.38  286.92   322.91  0.0e+00
+    80+ Years 0 - 9 Years      763.70  719.91   810.16  0.0e+00
+
+Odds ratio of death, male vs female, within each age group (p = two-sided Wald test of OR = 1):
+    age_group  odds_ratio_male_vs_female  ci_low  ci_high  p_value
+  0 - 9 Years                       1.13    1.00     1.27  4.5e-02
+10 - 19 Years                       1.36    1.22     1.51  1.0e-08
+20 - 29 Years                       1.95    1.86     2.05 8.0e-150
+30 - 39 Years                       1.99    1.93     2.05  0.0e+00
+40 - 49 Years                       2.04    2.00     2.08  0.0e+00
+50 - 59 Years                       2.01    1.98     2.03  0.0e+00
+60 - 69 Years                       1.73    1.72     1.75  0.0e+00
+70 - 79 Years                       1.57    1.56     1.58  0.0e+00
+    80+ Years                       1.41    1.41     1.42  0.0e+00
+
+======================================================================
+3. FATALITY BY ETHNICITY (known death status only)
+Known-outcome cases with known ethnicity and age: 24,751,193 of 34,071,247 (72.6%)
+Crude vs age-standardised case fatality (standard = age mix of all known cases):
+                                            race_eth  deaths    known  crude_fatality  std_fatality  std_ci_low  std_ci_high
+Native Hawaiian/Other Pacific Islander, Non-Hispanic    1929    40637         0.04747       0.07454     0.07155      0.07753
+         American Indian/Alaska Native, Non-Hispanic    8927   194217         0.04596       0.06379     0.06259      0.06499
+                                 Asian, Non-Hispanic   27852   714471         0.03898       0.05745     0.05689      0.05801
+                                 White, Non-Hispanic  564203 15472043         0.03647       0.03027     0.03020      0.03035
+                                 Black, Non-Hispanic  114544  3285197         0.03487       0.04587     0.04563      0.04611
+                                     Hispanic/Latino  142075  4279714         0.03320       0.05362     0.05337      0.05388
+                        Multiple/Other, Non-Hispanic   18454   764914         0.02413       0.03351     0.03307      0.03396
+Note: crude differences mostly reflect different age structures; compare the standardised column.
+
+======================================================================
+4. FATALITY OVER TIME (known death status only)
+Oldest age group (80+ Years), fatality per year:
+ year  deaths  known  fatality  ci_low  ci_high
+ 2020  189423 464873    0.4075  0.4061   0.4089
+ 2021  113891 391013    0.2913  0.2898   0.2927
+ 2022   87477 578751    0.1511  0.1502   0.1521
+ 2023   25807 259225    0.0996  0.0984   0.1007
+ 2024    4799  59980    0.0800  0.0779   0.0822
+
+(fig4 saved twice: log scale and linear scale. On the linear version the 0-39 and 40-59 bands look close to flat against 80+ - that is the real gap in magnitude, not a rendering issue. Use the log version to compare across all four bands at once.)

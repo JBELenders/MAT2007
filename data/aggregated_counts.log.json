@@ -1,0 +1,15 @@
+{
+  "input": "C:\\VSC\\data\\export.csv",
+  "finished": "2026-10-15T12:31:27",
+  "partial_test_run": false,
+  "rows_read": 106219500,
+  "lines_in_file": 106219500,
+  "rows_skipped_as_malformed": 0,
+  "chunks": 22,
+  "chunksize": 5000000,
+  "output_rows": 30768,
+  "invalid_date_rows": 0,
+  "known_death_rows": 34071247,
+  "pandas_version": "3.0.6",
+  "seconds": 207.6
+}
